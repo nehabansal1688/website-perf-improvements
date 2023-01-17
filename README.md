@@ -34,4 +34,14 @@ DCL - dom contentful loaded event - > FP Firs paint -> FCP -> first contentful p
 
 # URL for performance stats of website
 __https://pagespeed.web.dev/__
+<br/>
 __https://www.webpagetest.org/__
+
+# __ Chrome perf tab profiler__
+* inspect dev tool and click on performance tab -> click on refresh -> stop 
+* analyse the profile
+* profile is better in dev mode rather than production mode as code is compressed and source map are disabled in prod code
+* You can enable screenshot option to see what happens on screen during the profile analysis, intermedaitae state of UI which is usually not visible on load
+* yellow color - javascript ctivity, green - repainting, blue - html parsing , purple - style calculation
+* network tab in profile shows detailed data of n/w console tab. what happen in that time frame i.e. js request, html ,images loaded
+* main tab - we should use this for performace gaps
