@@ -37,7 +37,7 @@ __https://pagespeed.web.dev/__
 <br/>
 __https://www.webpagetest.org/__
 
-# __ Chrome perf tab profiler__
+# Chrome perf tab profiler
 * inspect dev tool and click on performance tab -> click on refresh -> stop 
 * analyse the profile
 * profile is better in dev mode rather than production mode as code is compressed and source map are disabled in prod code
