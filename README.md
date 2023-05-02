@@ -43,6 +43,9 @@ __monitoring tools__
 speed Curve<br/>
 fireFox performance tab<br />
 
+__article__
+https://medium.com/engineered-publicis-sapient/web-performance-is-beyond-some-page-load-numbers-6592b1a80b05
+
 # Chrome perf tab profiler
 * inspect dev tool and click on performance tab -> click on refresh -> stop 
 * analyse the profile
@@ -62,6 +65,8 @@ __ Core Web Vitals__
 1) LCP - largest contentful paint - good if within 2.5sec
 2) FID - first inut delay - when user interact with page ie.e from button click to the response - good if less than 100ms
 3) CLS - commulative layout shift -changes in display when the content loads and provides bad exp to user- shd be less than 0.1 - 
+it is evaluated for whole page. if while scrolling page is layout is shifting then it is calculated for all. in SPA website, if pages are not refreshed then cls is calculated for all refreshed component. as it tracks for whole journey. CLS will be 0 if layout shift is done within 300ms.
+4) 
 
 
  # Use Impactful features
