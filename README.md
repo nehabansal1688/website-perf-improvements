@@ -61,6 +61,16 @@ https://medium.com/engineered-publicis-sapient/web-performance-is-beyond-some-pa
  2) ease of interraction
  3) visual stability
  
+ __visual vitals__
+ 1) FP - first paint - background color
+ 2) FCP - first contentful paint - first text anywhere in page
+ 3) FMP - first meaningful paint - 
+ 4) LCP -largest contentful paint - for the current viewport 0- screen which is visible 
+ 5) page load time - when everything on page is loaded, all resources, scripts, css images etc
+ 6) time to visual ready
+ 
+ 
+ 
 __ Core Web Vitals__
 1) LCP - largest contentful paint - good if within 2.5sec
 2) FID - first inut delay - when user interact with page ie.e from button click to the response - good if less than 100ms
