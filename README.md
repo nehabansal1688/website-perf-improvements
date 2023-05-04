@@ -69,7 +69,11 @@ https://medium.com/engineered-publicis-sapient/web-performance-is-beyond-some-pa
  5) page load time - when everything on page is loaded, all resources, scripts, css images etc
  6) time to visual ready
  
- 
+ __ux vitals__
+ 1) TTI - time ot intractive
+ 2) TBT - time b/w FCP -TTI- blocked time
+ 3) INP - interaction to next paint - give you all interaction which were below the mark - TTI is subset of INP
+ 4) FID - first inpoit deplay
  
 __ Core Web Vitals__
 1) LCP - largest contentful paint - good if within 2.5sec
