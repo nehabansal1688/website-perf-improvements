@@ -113,4 +113,29 @@ __Browser Cache__
 __CDN cache__
 
 
+__compression__
+we can compress files using GZIP and brotili- brotili compression is better than gzip
+
+Static Compression
+when files are compressed before storing in server
+
+Dymanic Compression
+files are compressed as response from server
+
+where do we compress data? - better to compress at build
+if dynamic then cdn
+
+
+__Responsive Images__
+if we have high resloution picture, when it is rendered on mobile then it has perf issues.
+use img srcSet tag which takes nultiple images as per the diffrent sizes.
+
+picture source is heavy so use srcset as it is lightweight
+
+User webP and avif image formats as these are smaller()25-30% in size as compared to png and jpegs
+
+__preload__
+4-6 preloads shd be fine
+what to preload - font-face
+
  
