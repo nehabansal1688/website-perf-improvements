@@ -75,7 +75,7 @@ https://medium.com/engineered-publicis-sapient/web-performance-is-beyond-some-pa
  3) INP - interaction to next paint - give you all interaction which were below the mark - TTI is subset of INP
  4) FID - first inpoit deplay
  
-__ Core Web Vitals__
+__Core Web Vitals__
 1) LCP - largest contentful paint - good if within 2.5sec
 2) FID - first inut delay - when user interact with page ie.e from button click to the response - good if less than 100ms
 3) CLS - commulative layout shift -changes in display when the content loads and provides bad exp to user- shd be less than 0.1 - 
@@ -163,7 +163,7 @@ webpack bundle analyser
    --  avoid inline style as it causes reflow(more inline style more reflows)
 * partial hydration
 * server side performance 
-__metrics__
+<br/> __metrics__
   - performance is 80% on frontend and 20% on server side. if first html is returnned after 1000ms then we will be working on that
   - CPU utilization
   - memory utilization - if memory uses is higher the gc will start acting but we will not be able to access data during that time
@@ -171,7 +171,7 @@ __metrics__
   - throughput
   - server uptime
   - disk i/o - using sdd instead of hd as reading data is faster from sdd rather than hd
- __recomendadtions__
+ <br/> __recomendadtions__
   - minimize n/w latency. - reduce distance using CDN, use compression (gzip, brothili), 
   - load balancing & scaling(vertical/horizontal)
   - optimize server response time
