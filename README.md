@@ -162,4 +162,21 @@ webpack bundle analyser
    -- use absolute and fixed position
    --  avoid inline style as it causes reflow(more inline style more reflows)
 * partial hydration
+* server side performance 
+# metrics
+  - performance is 80% on frontend and 20% on server side. if first html is returnned after 1000ms then we will be working on that
+  - CPU utilization
+  - memory utilization - if memory uses is higher the gc will start acting but we will not be able to access data during that time
+  - average latency - if server is far from clinet location
+  - throughput
+  - server uptime
+  - disk i/o - using sdd instead of hd as reading data is faster from sdd rather than hd
+ # recomendadtions
+  - minimize n/w latency. - reduce distance using CDN, use compression (gzip, brothili), 
+  - load balancing & scaling(vertical/horizontal)
+  - optimize server response time
+  - optimize caching
+  - database perf - optimize schema (normaliztaion), indexing , stored procedures, db caching(redis, memcache), optimize query, connection polling (opening con takes time if we keep few open then it will available readily for use)
+  - 
+* deded
 
