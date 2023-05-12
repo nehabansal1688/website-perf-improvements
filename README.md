@@ -144,7 +144,7 @@ __Hydration__
 react hydration - event binding to html
 earlier we used to use react render but it is not replaced with hydrate
 
-__How to improve intractivity__
+# How to improve intractivity
 * if code cant be split then do tree shaking, compress code and uglify
 
 but best is code splitting(load only bundles which are required for page) - can be achieved by routes or by component based.
@@ -163,7 +163,7 @@ webpack bundle analyser
    --  avoid inline style as it causes reflow(more inline style more reflows)
 * partial hydration
 * server side performance 
-# metrics
+__metrics__
   - performance is 80% on frontend and 20% on server side. if first html is returnned after 1000ms then we will be working on that
   - CPU utilization
   - memory utilization - if memory uses is higher the gc will start acting but we will not be able to access data during that time
@@ -171,7 +171,7 @@ webpack bundle analyser
   - throughput
   - server uptime
   - disk i/o - using sdd instead of hd as reading data is faster from sdd rather than hd
- # recomendadtions
+ __recomendadtions__
   - minimize n/w latency. - reduce distance using CDN, use compression (gzip, brothili), 
   - load balancing & scaling(vertical/horizontal)
   - optimize server response time
