@@ -71,7 +71,7 @@ https://medium.com/engineered-publicis-sapient/web-performance-is-beyond-some-pa
  
  __ux vitals__
  1) TTI - time ot intractive
- 2) TBT - time b/w FCP -TTI- blocked time
+ 2) TBT - time b/w FCP -TTI- blocked time, sum of all tasks which are taking more than 50ms
  3) INP - interaction to next paint - give you all interaction which were below the mark - TTI is subset of INP
  4) FID - first inpoit deplay
  
@@ -139,3 +139,27 @@ __preload__
 what to preload - font-face
 
  
+
+__Hydration__
+react hydration - event binding to html
+earlier we used to use react render but it is not replaced with hydrate
+
+__How to improve intractivity__
+* if code cant be split then do tree shaking, compress code and uglify
+
+but best is code splitting(load only bundles which are required for page) - can be achieved by routes or by component based.
+
+* we can use dynamic imports
+
+Bundle Phobia for evaluating size of bundle - provides you alternative option, and n/w cost
+webpack bundle analyser 
+
+
+* optimistic UI
+* Async & defer - defer script load to end or wait till window onload event and then load script
+* builder.io - partytown- score goes down with analytics lib, using party town increases the score
+* Avoid repaint(changing the style not the dom node ) and reflow(changing the tree)- batch dom changes, set element to none and do changes and aagain set visibility,
+   -- use absolute and fixed position
+   --  avoid inline style as it causes reflow(more inline style more reflows)
+* partial hydration
+
